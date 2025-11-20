@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Registro - AMF La Paz</title>
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Optional icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">AMF La Paz</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav3">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNav3">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="clubes.html">Clubes</a></li>
+        <li class="nav-item"><a class="nav-link active" href="registro.html">Registro</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container my-4">
+  <h2>Registro de Jugadores</h2>
+  <p>Rellena el formulario. Los datos se mostrarán en consola y se añadirán a la tabla abajo (simulación).</p>
+
+  <form id="playerForm" class="row g-3" onsubmit="event.preventDefault(); registerPlayer();">
+    <div class="col-md-6">
+      <label class="form-label">Nombre completo</label>
+      <input type="text" id="name" class="form-control" required>
+    </div>
+    <div class="col-md-6">
+      <label class="form-label">Edad</label>
+      <input type="number" id="age" class="form-control" min="5" required>
+    </div>
+    <div class="col-md-6">
+      <label class="form-label">Categoría</label>
+      <select id="category" class="form-select" required>
+        <option value="Infantil">Infantil</option>
+        <option value="Juvenil">Juvenil</option>
+        <option value="Adulto">Adulto</option>
+      </select>
+    </div>
+    <div class="col-md-6">
+      <label class="form-label">Club</label>
+      <select id="club" class="form-select" required>
+        <option>Club 1</option>
+        <option>Club 2</option>
+        <option>Club 3</option>
+        <option>Club 4</option>
+        <option>Club 5</option>
+      </select>
+    </div>
+    <div class="col-12">
+      <button class="btn btn-success" type="submit">Registrar jugador</button>
+    </div>
+  </form>
+
+  <hr>
+  
+
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inicio - Asociación Municipal de Futsal La Paz</title>
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Optional icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html"><i class="fa-solid fa-futbol"></i> AMF La Paz</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="clubes.html">Clubes</a></li>
+        <li class="nav-item"><a class="nav-link" href="registro.html">Registro</a></li>
+        <li class="nav-item"><a class="nav-link" href="estadisticas.html">Estadísticas</a></li>
+        <li class="nav-item"><a class="nav-link" href="noticias.html">Noticias</a></li>
+        <li class="nav-item"><a class="nav-link" href="multimedia.html">Multimedia</a></li>
+        <li class="nav-item"><a class="nav-link" href="institucional.html">Institucional</a></li>
+      </ul>
+      <div class="d-flex">
+        <button class="btn btn-light me-2" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+        <button class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#registerModal">Registro</button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div class="container my-4">
+  <!-- Carousel -->
+  <div id="mainCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="fut3.jpg" alt="" width="100%" height="20">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Asociación Municipal de Futsal - La Paz</h5>
+          <p>Promoviendo el deporte en todas las edades.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="fut4444.jpg" class="d-block w-100" alt="Futsal 2">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Torneos y campeonatos</h5>
+          <p>Competencias oficiales por categorías.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="fut1111.jpg" class="d-block w-100" alt="Futsal 3">
+        <div class="carousel-caption d-none d-md-6">
+          <h5>Formación de jugadores</h5>
+          <p>Escuelas y entrenamientos municipales.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+      <span class="visually-hidden">Siguiente</span>
+    </button>
+  </div>
+
+  <div class="row">
+    <main class="col-lg-8">
+      <h2>Bienvenido</h2>
+      <p>La Asociación Municipal de Futsal de La Paz organiza torneos, promueve escuelas y gestiona la actividad deportiva local.</p>
+
+      <div class="card mb-3">
+        <div class="card-body">
+          <h5 class="card-title">Noticias destacadas</h5>
+          <p class="card-text">Entrevistas y novedades del mundo futsal local.</p>
+          <a href="noticias.html" class="btn btn-primary">Ver noticias</a>
+        </div>
+      </div>
+
+      <div class="card mb-3">
+        <div class="card-body">
+          <h5 class="card-title">Próximo torneo</h5>
+          <p class="card-text">Inscripciones abiertas por categorías.</p>
+          <a href="registro.html" class="btn btn-success">Inscribirse</a>
+        </div>
+      </div>
+
+    </main>
+
+    <aside class="col-lg-4">
+      <!-- Tabs (navs) lateral -->
+      <ul class="nav nav-tabs flex-column mb-3" id="sideTabs" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="tab1-tab" data-bs-toggle="tab" data-bs-target="#tab1" type="button" role="tab">Información</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="tab2-tab" data-bs-toggle="tab" data-bs-target="#tab2" type="button" role="tab">Sponsors</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="tab3-tab" data-bs-toggle="tab" data-bs-target="#tab3" type="button" role="tab">Contacto</button>
+        </li>
+      </ul>
+      <div class="tab-content">
+        <div class="tab-pane fade show active p-2" id="tab1">Sede central: La Paz. Horario: 09:00 - 18:00.</div>
+        <div class="tab-pane fade p-2" id="tab2">Sponsors: gracias a los estudiantes de la EISPDM</div>
+        <div class="tab-pane fade p-2" id="tab3">Email: contacto@amflapaz.org - Tel: +591 2 1234567</div>
+      </div>
+
+      <!-- Publicidad -->
+      <div class="mt-3">
+        <h6>Publicidad</h6>
+        <img src="powerade-2.jpg" class="img-fluid rounded mb-2" alt="ad1">
+        <img src="moster.jpg" class="img-fluid rounded" alt="ad2">
+      </div>
+    </aside>
+  </div>
+</div>
+
+<!-- Login y Registro (global) -->
+<!-- Login Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog">
+    <form class="modal-content" id="loginForm" onsubmit="event.preventDefault(); alert('Login simulado');">
+      <div class="modal-header">
+        <h5 class="modal-title">Iniciar Sesión</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <input class="form-control mb-2" placeholder="Usuario / Email" required>
+        <input class="form-control mb-2" type="password" placeholder="Contraseña" required>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="remember">
+          <label class="form-check-label" for="remember">Recordarme</label>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button class="btn btn-primary" type="submit">Entrar</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- Register Modal (simple) -->
+<div class="modal fade" id="registerModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog">
+    <form class="modal-content" id="modalRegisterForm" onsubmit="event.preventDefault(); registerFromModal();">
+      <div class="modal-header">
+        <h5 class="modal-title">Registro rápido</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <input id="modalName" class="form-control mb-2" placeholder="Nombre completo" required>
+        <input id="modalEmail" class="form-control mb-2" placeholder="Email" required>
+        <input id="modalClub" class="form-control mb-2" placeholder="Club" required>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button class="btn btn-success" type="submit">Registrar</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
